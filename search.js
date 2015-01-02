@@ -1,5 +1,5 @@
 MeteorSearch = function (options) {
-  searchTemplate = options.searchTemplate;
+  searchTemplate = options.searchTemplate || Template.search;
   resultsTemplate = options.resultsTemplate || searchTemplate;
   inputSelector = options.inputSelector || '.queryinput';
   searchFn = options.searchFn;
