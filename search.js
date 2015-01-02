@@ -1,8 +1,8 @@
 MeteorSearch = function (options) {
-  searchTemplate = options.searchTemplate || Template.search;
-  resultsTemplate = options.resultsTemplate || searchTemplate;
-  inputSelector = options.inputSelector || '.queryinput';
-  searchFn = options.searchFn;
+  var searchTemplate = options.searchTemplate || Template.search;
+  var resultsTemplate = options.resultsTemplate || searchTemplate;
+  var inputSelector = options.inputSelector || '.queryinput';
+  var searchFn = options.searchFn || _.identity;
 
   searchTemplate.helpers({
     query: function () {
