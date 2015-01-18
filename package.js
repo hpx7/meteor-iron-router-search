@@ -1,7 +1,7 @@
 Package.describe({
   name: 'hpx7:iron-router-search',
   summary: 'Simple search functionality with Meteor and iron:router',
-  version: '0.1.2',
+  version: '0.1.4',
   git: 'https://github.com/hpx7/meteor-iron-router-search.git'
 });
 
