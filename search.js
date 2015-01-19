@@ -34,9 +34,9 @@ MeteorSearch = function (options) {
   searchTemplate.events({
     'submit form': function (e) {
       $(inputSelector).blur();
-      var query = Router.current().params.query, hash = Router.current().params.hash;
-      query[urlKey] = $(e.target).find(inputSelector).val();
-      Router.go(Router.current().route.getName(), Router.current().params, {query: query, hash: hash});
+      var params = Router.current().params;
+      params.query[urlKey] = $(e.target).find(inputSelector).val();
+      Router.go(Router.current().route.getName(), params, {query: params.query, hash: params.hash});
       return false;
     }
   });
